@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyo Production</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+            <h1>Diyo Production</h1>
+            <div class="divider"></div>
+            <p>More Than an Image. A Feeling.</p>
+            <a href="#portfolio" class="btn-primary">View Portfolio</a>
+        </div>
+    </header>
+
+    <section id="portfolio" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>A curated collection of nightlife, hospitality, and outdoor imagery.</p>
+        </div>
+
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="clubs">Clubs</button>
+            <button class="filter-btn" data-filter="restaurants">Restaurants</button>
+            <button class="filter-btn" data-filter="nature">Outdoor & Nature</button>
+        </div>
+
+        <div class="portfolio-grid"></div> 
+    </div>
+</section>
+
+    <section id="about" class="section bg-light">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="kale.png" alt="Photographer Profile">
+            </div>
+            <div class="about-text">
+                <h2>Visuals That Elevate Your Brand</h2>
+                <p>Diyo Production is a freelance photography studio located in Belgium. We work with businesses across the hospitality and nightlife sectors to create professional, eye-catching visual content.</p>
+                <p>From dynamic event photography to detailed interior shots, we bring a sharp, creative eye to every project. We are passionate about helping local businesses in Knokke-Heist stand out with photography that is clean, crisp, and inviting.</p>
+                <p class="signature-text">Diyo Production</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2>Contact Diyo Production</h2>
+                <p>Ready to elevate your brand’s visuals? Get in touch with us.</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> diyoproduction123@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +911 911 911 911</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Knokke-Heist, Belgium</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/diyo_production/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diyo Production. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="lightbox">
+    <span id="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Full Screen">
+</div>
+</body>
+</html>
